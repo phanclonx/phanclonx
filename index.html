@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phanclonx Hub - The #1 Free Scripting Server for Rivals and Da Hood Domination</title>
+    <title>Phanclonx Hub - The #1 Free Neon-Charged Scripting Server for Rivals & Da Hood</title>
     <style>
         * {
             margin: 0;
@@ -14,7 +14,7 @@
             font-family: 'Arial', sans-serif;
             line-height: 1.8;
             color: #fff;
-            background-color: #1a1a1a;
+            background-color: #0d0d0d;
         }
         .container {
             max-width: 1200px;
@@ -24,88 +24,103 @@
         header {
             text-align: center;
             padding: 60px 0;
-            background: linear-gradient(135deg, #ff6b6b 0%, #4b79a1 100%);
+            background: linear-gradient(135deg, #ff00ff 0%, #00f7ff 100%);
         }
         h1 {
-            font-size: 3.5em;
+            font-size: 4em;
             margin-bottom: 15px;
-            color: #fff;
+            background: linear-gradient(45deg, #ff00ff, #00ff00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .subtitle {
-            font-size: 1.8em;
+            font-size: 2em;
             font-weight: bold;
-            color: #e0e0e0;
+            color: #00f7ff;
+            text-shadow: 0 0 10px #00f7ff;
         }
         .hero {
             text-align: center;
             padding: 80px 0;
-            background-color: #000;
+            background: #000;
         }
         .hero h2 {
-            font-size: 3em;
+            font-size: 3.2em;
             margin-bottom: 25px;
-            color: #fff;
+            background: linear-gradient(45deg, #ff00ff, #00ff00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .hero p {
-            font-size: 1.3em;
+            font-size: 1.4em;
             max-width: 900px;
             margin: 0 auto;
+            color: #fff;
+            text-shadow: 0 0 5px #ff00ff;
         }
         .features-grid {
             display: flex;
             justify-content: space-around;
             padding: 50px 0;
-            background-color: #2a2a2a;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
         }
         .feature {
             text-align: center;
             font-size: 1.8em;
             font-weight: bold;
-            color: #ff6b6b;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
         }
         .section {
             padding: 80px 0;
             text-align: center;
         }
         .section h2 {
-            font-size: 3em;
+            font-size: 3.2em;
             margin-bottom: 25px;
-            color: #fff;
+            background: linear-gradient(45deg, #ff00ff, #00f7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .section h3 {
-            font-size: 2.2em;
+            font-size: 2.4em;
             margin: 50px 0 25px;
-            color: #ff6b6b;
+            color: #00f7ff;
+            text-shadow: 0 0 10px #00f7ff;
         }
         .section p {
-            font-size: 1.2em;
+            font-size: 1.3em;
             max-width: 900px;
             margin: 0 auto 50px;
+            color: #e0e0e0;
+            text-shadow: 0 0 5px #ff00ff;
         }
         .plan {
-            background: #2a2a2a;
-            border: 2px solid #333;
+            background: #1a1a1a;
+            border: 2px solid #ff00ff;
             border-radius: 10px;
             padding: 50px;
             width: 350px;
             text-align: center;
             margin: 0 auto;
-            transition: transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .plan:hover {
             transform: translateY(-5px);
-            border-color: #ff6b6b;
+            box-shadow: 0 0 20px #00f7ff;
         }
         .plan h3 {
-            font-size: 2em;
+            font-size: 2.2em;
             margin-bottom: 15px;
-            color: #fff;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
         }
         .price {
             font-size: 3.5em;
-            color: #ff6b6b;
+            color: #ff00ff;
             font-weight: bold;
             margin-bottom: 15px;
+            text-shadow: 0 0 10px #ff00ff;
         }
         .plan ul {
             list-style: none;
@@ -114,21 +129,24 @@
         }
         .plan li {
             padding: 8px 0;
-            color: #e0e0e0;
+            color: #00f7ff;
+            text-shadow: 0 0 5px #00f7ff;
         }
         .btn {
             display: inline-block;
-            background: linear-gradient(135deg, #ff6b6b 0%, #4b79a1 100%);
+            background: linear-gradient(135deg, #ff00ff 0%, #00ff00 100%);
             color: #fff;
             padding: 20px 40px;
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
             margin-top: 25px;
-            transition: background 0.3s;
+            transition: background 0.3s, box-shadow 0.3s;
+            text-shadow: 0 0 5px #000;
         }
         .btn:hover {
-            background: linear-gradient(135deg, #4b79a1 0%, #ff6b6b 100%);
+            background: linear-gradient(135deg, #00ff00 0%, #ff00ff 100%);
+            box-shadow: 0 0 15px #00f7ff;
         }
         .status-grid {
             display: flex;
@@ -138,8 +156,8 @@
             flex-wrap: wrap;
         }
         .status-item {
-            background: #2a2a2a;
-            border: 1px solid #333;
+            background: #1a1a1a;
+            border: 1px solid #ff00ff;
             border-radius: 8px;
             padding: 25px;
             width: 220px;
@@ -148,12 +166,26 @@
         .status-item h4 {
             color: #fff;
             margin-bottom: 15px;
+            text-shadow: 0 0 5px #ff00ff;
         }
         .status-operational {
-            color: #ff6b6b;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
         }
         .status-degraded {
             color: #ff9800;
+            text-shadow: 0 0 10px #ff9800;
+        }
+        .about-me {
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            padding: 80px 0;
+        }
+        .about-me p {
+            font-size: 1.3em;
+            max-width: 900px;
+            margin: 0 auto;
+            color: #00f7ff;
+            text-shadow: 0 0 5px #00f7ff;
         }
         @media (max-width: 768px) {
             .features-grid, .status-grid {
@@ -164,6 +196,12 @@
                 width: 100%;
                 max-width: 350px;
             }
+            h1 {
+                font-size: 2.5em;
+            }
+            .hero h2 {
+                font-size: 2.2em;
+            }
         }
     </style>
 </head>
@@ -171,66 +209,73 @@
     <header>
         <div class="container">
             <h1>Phanclonx Hub</h1>
-            <p class="subtitle">The #1 Free Scripting Server for Unmatched Rivals and Da Hood Domination</p>
+            <p class="subtitle">The #1 Free Neon-Charged Scripting Server for Ultimate Rivals & Da Hood Domination</p>
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h2># Unleash Your Supreme Dominance in Rivals and Da Hood with Free, Elite Scripts.</h2>
-            <p>Phanclonx Hub delivers the ultimate scripting experience, completely free, empowering you with unmatched precision, power, and control. Stop struggling in matches—take command of every game, outmaneuver your opponents, and rise to the top of the leaderboards with our top-tier, fully free scripts tailored for Rivals and Da Hood.</p>
+            <h2># Unleash Your Epic, Colorful Dominance in Rivals and Da Hood with Free Elite Scripts!</h2>
+            <p>Phanclonx Hub is your ticket to ruling the game with vibrant, unstoppable scripting power—all 100% free! Designed for maximum impact, our scripts give you precision, speed, and control to crush every match in Rivals and Da Hood. Forget just playing—take over, outshine your opponents, and light up the leaderboards with neon-charged dominance.</p>
         </div>
     </section>
 
     <section class="features-grid">
         <div class="container">
-            <div class="feature">100% Undetected Scripts</div>
-            <div class="feature">Elite, Game-Changing Features</div>
-            <div class="feature">24/7 Dedicated Community Support</div>
+            <div class="feature">Stealthy, Undetected Scripts</div>
+            <div class="feature">Insane, Game-Breaking Features</div>
+            <div class="feature">24/7 Epic Community Support</div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2>Designed for Absolute Victory in Rivals and Da Hood.</h2>
-            <p>Every feature in Phanclonx Hub is crafted with precision to give you a commanding edge in Rivals and Da Hood, all wrapped in a sleek, intuitive interface that makes scripting accessible and powerful for every player, completely free of charge.</p>
+            <h2>Built to Light Up Rivals and Da Hood with Victory!</h2>
+            <p>Every feature in Phanclonx Hub is crafted to give you a blazing edge in Rivals and Da Hood, delivered through a slick, neon-lit interface that’s as bold as your gameplay. All features are free, so every player can shine bright and dominate!</p>
 
-            <h3>Precision Aimbot and Movement Mastery</h3>
-            <p>Dominate every encounter with pinpoint accuracy. Our advanced aimbot ensures perfect shots in Rivals, while our movement scripts let you navigate Da Hood with unmatched agility. From headshot precision to seamless dodging, you control every aspect of the game with god-like finesse.</p>
+            <h3>Neon-Precision Aimbot & Movement Control</h3>
+            <p>Hit every shot with electrifying accuracy in Rivals and glide through Da Hood with unmatched flair. Our aimbot locks onto targets like a laser, while our movement scripts let you dodge, sprint, and outmaneuver foes with vibrant, god-tier precision—all free!</p>
 
-            <h3>Smart Auto-Farming for Effortless Gains</h3>
-            <p>Grind smarter, not harder, in Da Hood. Our intelligent auto-farming scripts automate resource collection, cash earning, and leveling, freeing you to focus on dominating opponents and mastering the game, all at no cost.</p>
+            <h3>Smart Auto-Farming for Epic Gains</h3>
+            <p>Grind like a pro in Da Hood with our dazzling auto-farming scripts. Automatically collect cash, resources, and XP while you focus on owning the competition. Our free scripts make leveling up a breeze, so you can shine brighter than ever.</p>
 
-            <h3>Advanced ESP for Unrivaled Awareness</h3>
-            <p>Gain a tactical advantage with our cutting-edge ESP system. Track players, loot, and key items through walls in both Rivals and Da Hood. With complete situational awareness, you’ll anticipate every move and stay ahead of the competition, all for free.</p>
+            <h3>Blazing ESP for Total Game Awareness</h3>
+            <p>See the game in vivid color with our advanced ESP system. Track players, loot, and key items through walls in Rivals and Da Hood, glowing with neon clarity. Stay steps ahead with full awareness, all powered by our free, high-octane scripts.</p>
+        </div>
+    </section>
+
+    <section class="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Yo, I’m a 14-year-old Filipino coder with a passion for gaming and scripting! I built Phanclonx Hub to bring the sickest, free scripts to Rivals and Da Hood players worldwide. My goal? To help you dominate with vibrant, powerful tools that light up every match. Join the community and let’s make some epic plays together!</p>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2>Completely Free Access to Elite Scripting Power</h2>
-            <p>Phanclonx Hub is 100% free, giving every player access to our full suite of elite scripts for Rivals and Da Hood. Join our community and start dominating today with no cost, no catch, just pure scripting power.</p>
+            <h2>100% Free Access to Neon-Charged Scripting Glory</h2>
+            <p>Phanclonx Hub is all about giving every player the ultimate scripting experience for free. No paywalls, no limits—just pure, colorful power for Rivals and Da Hood. Join our Discord and unlock the full arsenal of scripts to dominate today!</p>
 
             <div class="plan">
                 <h3>Phanclonx Free</h3>
                 <div class="price">$0</div>
-                <p>Free Forever, Full Access</p>
+                <p>Free Forever, Full Neon Access</p>
                 <ul>
-                    <li>Advanced Aimbot and Movement Control</li>
-                    <li>Intelligent Auto-Farming Scripts</li>
-                    <li>Full ESP with Customization Options</li>
-                    <li>Exclusive Script Updates for Rivals and Da Hood</li>
-                    <li>24/7 Community Discord Support</li>
+                    <li>Neon-Precision Aimbot & Movement Control</li>
+                    <li>Smart Auto-Farming for Epic Gains</li>
+                    <li>Blazing ESP with Custom Neon Effects</li>
+                    <li>Exclusive Script Updates for Rivals & Da Hood</li>
+                    <li>24/7 Community Support on Discord</li>
                 </ul>
-                <a href="https://discord.gg/FThw4r8bNJ" class="btn">Join for Free Access Now</a>
+                <a href="https://discord.gg/FThw4r8bNJ" class="btn">Join for Free Neon Access Now</a>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <h2>Reliable Performance for Uninterrupted Domination.</h2>
-            <p>Our infrastructure is monitored around the clock to ensure your scripts run flawlessly in every Rivals and Da Hood match. We prioritize stability and performance, so you can focus on crushing the competition with confidence.</p>
+            <h2>Unstoppable Performance for Neon-Charged Domination</h2>
+            <p>Our servers are monitored 24/7 to keep your scripts running smoother than a neon-lit skyline. We ensure blazing-fast performance so you can focus on crushing it in Rivals and Da Hood with uninterrupted, vibrant gameplay.</p>
 
             <div class="status-grid">
                 <div class="status-item">
@@ -253,11 +298,11 @@
         </div>
     </section>
 
-    <section class="section" style="background-color: #000;">
+    <section class="section" style="background: linear-gradient(135deg, #000, #1a1a1a);">
         <div class="container">
-            <h2>Ready to Rule Rivals and Da Hood with Phanclonx Hub?</h2>
-            <p>Join our vibrant Discord community today to gain instant, free access to the #1 scripts for Rivals and Da Hood. Outplay, outsmart, and outlast your opponents as you climb to the top of the leaderboards with Phanclonx Hub’s unbeatable, cost-free scripting tools.</p>
-            <a href="https://discord.gg/FThw4r8bNJ" class="btn">Join for Instant Free Access and Start Dominating</a>
+            <h2>Ready to Ignite Rivals & Da Hood with Phanclonx Hub?</h2>
+            <p>Dive into our electrifying Discord community and grab instant, free access to the #1 neon-charged scripts for Rivals and Da Hood. Outplay, outshine, and dominate every match with tools that make you unstoppable. Join now and let’s light up the game together!</p>
+            <a href="https://discord.gg/FThw4r8bNJ" class="btn">Join for Instant Free Access & Start Dominating</a>
         </div>
     </section>
 </body>
